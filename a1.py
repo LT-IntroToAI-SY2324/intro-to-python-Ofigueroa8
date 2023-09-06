@@ -32,8 +32,8 @@ def absolute(n: int) -> int:
 
     return n
     
-assert absolute(7), "Not correct"
-assert absolute(-7), "Not correcto"
+assert absolute(7) == 7, "Not correct"
+assert absolute(-4) == 4, "Not correcto"
 
 # def factorial(n: int) -> int:
 #     """Takes a number n, and computes the factorial n! You can assume the passed in
