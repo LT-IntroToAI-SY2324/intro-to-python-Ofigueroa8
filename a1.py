@@ -14,27 +14,28 @@ check, if you do not complete the generative AI portion of the assignment.
 
 from typing import List, TypeVar
 
+# DONEEEEEEEEEEEEEEEE
+# def absolute(n: int) -> int:
+#     """Gives the absolute value of the passed in number. Cannot use the built in
+#     function `abs`.
 
-def absolute(n: int) -> int:
-    """Gives the absolute value of the passed in number. Cannot use the built in
-    function `abs`.
+#     Args:
+#         n - the number to take the absolute value of
 
-    Args:
-        n - the number to take the absolute value of
-
-    Returns:
-        the absolute value of the passed in number
-    """
+#     Returns:
+#         the absolute value of the passed in number
+#     """
     
 
-    if n < 0:
-        return n * -1
+#     if n < 0:
+#         return n * -1
 
-    return n
+#     return n
     
-assert absolute(7) == 7, "Not correct"
-assert absolute(-4) == 4, "Not correcto"
+# assert absolute(7) == 7, "Not correct"
+# assert absolute(-4) == 4, "Not correcto"
 
+# NOT DONE NOT DONE
 # def factorial(n: int) -> int:
 #     """Takes a number n, and computes the factorial n! You can assume the passed in
 #     number will be positive
@@ -45,24 +46,34 @@ assert absolute(-4) == 4, "Not correcto"
 #     Returns:
 #         factorial of the passed in number
 #     """
-#     raise NotImplementedError("factorial")
+    
 
 
-# T = TypeVar("T")
 
+T = TypeVar("T")
 
-# def every_other(lst: List[T]) -> List[T]:
-#     """Takes a list and returns a list of every other element in the list, starting with
-#     the first.
+def every_other(lst: List[T]) -> List[T]:
+    """Takes a list and returns a list of every other element in the list, starting with
+    the first.
 
-#     Args:
-#         lst - a list of any (constrained by type T to be the same type as the returned
-#             list)
+    Args:
+        lst - a list of any (constrained by type T to be the same type as the returned
+            list)
 
-#     Returns:
-#         a list of every of other item in the original list starting with the first
-#     """
-#     raise NotImplementedError("every_other")
+    Returns:
+        a list of every of other item in the original list starting with the first
+    """
+    ls: List[T] = []
+    for i in range(0, len(lst), 2):
+        ls.append(lst[i])
+
+    return ls
+
+lost = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+result_list = every_other(lost)
+print(result_list)
+
+    
 
 
 # def sum_list(lst: List[int]) -> int:
