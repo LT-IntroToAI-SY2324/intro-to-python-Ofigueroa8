@@ -35,7 +35,9 @@ from typing import List, TypeVar
 # assert absolute(7) == 7, "Not correct"
 # assert absolute(-4) == 4, "Not correcto"
 
-# NOT DONE NOT DONE
+
+
+#DONEEEEEEEEEEEEEE
 # def factorial(n: int) -> int:
 #     """Takes a number n, and computes the factorial n! You can assume the passed in
 #     number will be positive
@@ -46,36 +48,41 @@ from typing import List, TypeVar
 #     Returns:
 #         factorial of the passed in number
 #     """
+#     result = 1
+#     for x in range(1, n + 1):
+#         result *= x
+#     return result
+
+#print(factorial(4))
+
+
+# "DONEEEEEEEEEEEEEEEEEE"
+# T = TypeVar("T")
+
+# def every_other(lst: List[T]) -> List[T]:
+#     """Takes a list and returns a list of every other element in the list, starting with
+#     the first.
+
+#     Args:
+#         lst - a list of any (constrained by type T to be the same type as the returned
+#             list)
+
+#     Returns:
+#         a list of every of other item in the original list starting with the first
+#     """
+#     ls: List[T] = []
+#     for i in range(0, len(lst), 2):
+#         ls.append(lst[i])
+
+#     return ls
+
+# lost = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# result_list = every_other(lost)
+# print(result_list)
+
     
 
-
-
-T = TypeVar("T")
-
-def every_other(lst: List[T]) -> List[T]:
-    """Takes a list and returns a list of every other element in the list, starting with
-    the first.
-
-    Args:
-        lst - a list of any (constrained by type T to be the same type as the returned
-            list)
-
-    Returns:
-        a list of every of other item in the original list starting with the first
-    """
-    ls: List[T] = []
-    for i in range(0, len(lst), 2):
-        ls.append(lst[i])
-
-    return ls
-
-lost = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-result_list = every_other(lost)
-print(result_list)
-
-    
-
-
+# "DONEEEEEEEEEEEEEEEEEEEEEEE"
 # def sum_list(lst: List[int]) -> int:
 #     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
 #     use the built in function `sum`.
@@ -86,9 +93,18 @@ print(result_list)
 #     Returns:
 #         the sum of the passed in list
 #     """
-#     raise NotImplementedError("sum_list")
+#     num = 0
+#     for i in range(len(lst)):
+#         num += lst[i]
+
+#     return num
+
+# lst: List[int] = [21, 33, 241, 2]
+# print(sum_list(lst))
 
 
+
+# "DONEEEEEEEEEEEEEEEE"
 # def mean(lst: List[int]) -> float:
 #     """Takes a list of numbers, and returns the mean of the numbers.
 
@@ -98,9 +114,18 @@ print(result_list)
 #     Returns:
 #         the mean of the passed in list
 #     """
-#     raise NotImplementedError("mean")
+#     result: float = 0
+
+#     for i in range(len(lst)):
+#         result += lst[i]
+
+#     return result / len(lst)
+
+# lst: List[int] = [1231, 123, 19, 42]
+# print(mean(lst))
 
 
+# DONEEEEEEEEEE
 # def median(lst: List[int]) -> float:
 #     """Takes an ordered list of numbers, and returns the median of the numbers.
 
@@ -113,7 +138,17 @@ print(result_list)
 #     Returns:
 #         the median of the passed in list
 #     """
-#     raise NotImplementedError("median")
+#     if len(lst) % 2 == 1:
+#         num = int(len(lst) / 2)
+#         return lst[num]
+#     else:
+#         num1 = int(len(lst) / 2)
+#         num2 = int(len(lst) / 2 - 1)
+#         return (lst[num1] + lst[num2]) / 2 
+
+# lst = [12, 13, 134, 53, 43]
+# print(median(lst))
+# print(int(12/5) - 1)
 
 
 # def duck_duck_goose(lst: List[str]) -> List[str]:
