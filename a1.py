@@ -15,66 +15,66 @@ check, if you do not complete the generative AI portion of the assignment.
 from typing import List, TypeVar
 
 # DONEEEEEEEEEEEEEEEE
-# def absolute(n: int) -> int:
-#     """Gives the absolute value of the passed in number. Cannot use the built in
-#     function `abs`.
+def absolute(n: int) -> int:
+    """Gives the absolute value of the passed in number. Cannot use the built in
+    function `abs`.
 
-#     Args:
-#         n - the number to take the absolute value of
+    Args:
+        n - the number to take the absolute value of
 
-#     Returns:
-#         the absolute value of the passed in number
-#     """
+    Returns:
+        the absolute value of the passed in number
+    """
     
 
-#     if n < 0:
-#         return n * -1
+    if n < 0:
+        return n * -1
 
-#     return n
+    return n
     
 # assert absolute(7) == 7, "Not correct"
 # assert absolute(-4) == 4, "Not correcto"
 
 
 
-#DONEEEEEEEEEEEEEE
-# def factorial(n: int) -> int:
-#     """Takes a number n, and computes the factorial n! You can assume the passed in
-#     number will be positive
+# DONEEEEEEEEEEEEEE
+def factorial(n: int) -> int:
+    """Takes a number n, and computes the factorial n! You can assume the passed in
+    number will be positive
 
-#     Args:
-#         n - the number to compute factorial of
+    Args:
+        n - the number to compute factorial of
 
-#     Returns:
-#         factorial of the passed in number
-#     """
-#     result = 1
-#     for x in range(1, n + 1):
-#         result *= x
-#     return result
+    Returns:
+        factorial of the passed in number
+    """
+    result = 1
+    for x in range(1, n + 1):
+        result *= x
+    return result
 
 #print(factorial(4))
 
 
 # "DONEEEEEEEEEEEEEEEEEE"
-# T = TypeVar("T")
+T = TypeVar("T")
 
-# def every_other(lst: List[T]) -> List[T]:
-#     """Takes a list and returns a list of every other element in the list, starting with
-#     the first.
+def every_other(lst: List[T]) -> List[T]:
+    """Takes a list and returns a list of every other element in the list, starting with
+    the first.
 
-#     Args:
-#         lst - a list of any (constrained by type T to be the same type as the returned
-#             list)
+    Args:
+        lst - a list of any (constrained by type T to be the same type as the returned
+            list)
 
-#     Returns:
-#         a list of every of other item in the original list starting with the first
-#     """
-#     ls: List[T] = []
-#     for i in range(0, len(lst), 2):
-#         ls.append(lst[i])
+    Returns:
+        a list of every of other item in the original list starting with the first
+    """
+    ls: List[T] = []
+    for i in range(0, len(lst), 2):
+        ls.append(lst[i])
 
-#     return ls
+    return ls
 
 # lost = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 # result_list = every_other(lost)
@@ -83,21 +83,21 @@ from typing import List, TypeVar
     
 
 # "DONEEEEEEEEEEEEEEEEEEEEEEE"
-# def sum_list(lst: List[int]) -> int:
-#     """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
-#     use the built in function `sum`.
+def sum_list(lst: List[int]) -> int:
+    """Takes a list of numbers, and returns the sum of the numbers in that list. Cannot
+    use the built in function `sum`.
 
-#     Args:
-#         lst - a list of numbers
+    Args:
+        lst - a list of numbers
 
-#     Returns:
-#         the sum of the passed in list
-#     """
-#     num = 0
-#     for i in range(len(lst)):
-#         num += lst[i]
+    Returns:
+        the sum of the passed in list
+    """
+    num = 0
+    for i in range(len(lst)):
+        num += lst[i]
 
-#     return num
+    return num
 
 # lst: List[int] = [21, 33, 241, 2]
 # print(sum_list(lst))
@@ -105,88 +105,108 @@ from typing import List, TypeVar
 
 
 # "DONEEEEEEEEEEEEEEEE"
-# def mean(lst: List[int]) -> float:
-#     """Takes a list of numbers, and returns the mean of the numbers.
+def mean(lst: List[int]) -> float:
+    """Takes a list of numbers, and returns the mean of the numbers.
 
-#     Args:
-#         lst - a list of numbers
+    Args:
+        lst - a list of numbers
 
-#     Returns:
-#         the mean of the passed in list
-#     """
-#     result: float = 0
+    Returns:
+        the mean of the passed in list
+    """
+    result: float = 0
 
-#     for i in range(len(lst)):
-#         result += lst[i]
+    for i in range(len(lst)):
+        result += lst[i]
 
-#     return result / len(lst)
+    return result / len(lst)
 
 # lst: List[int] = [1231, 123, 19, 42]
 # print(mean(lst))
 
 
 # DONEEEEEEEEEE
-# def median(lst: List[int]) -> float:
-#     """Takes an ordered list of numbers, and returns the median of the numbers.
+def median(lst: List[int]) -> float:
+    """Takes an ordered list of numbers, and returns the median of the numbers.
 
-#     If the list has an even number of values, it computes the mean of the two center
-#     values.
+    If the list has an even number of values, it computes the mean of the two center
+    values.
 
-#     Args:
-#         lst - an ordered list of numbers
+    Args:
+        lst - an ordered list of numbers
 
-#     Returns:
-#         the median of the passed in list
-#     """
-#     if len(lst) % 2 == 1:
-#         num = int(len(lst) / 2)
-#         return lst[num]
-#     else:
-#         num1 = int(len(lst) / 2)
-#         num2 = int(len(lst) / 2 - 1)
-#         return (lst[num1] + lst[num2]) / 2 
+    Returns:
+        the median of the passed in list
+    """
+    if len(lst) % 2 == 1:
+        num = int(len(lst) / 2)
+        return lst[num]
+    else:
+        num1 = int(len(lst) / 2)
+        num2 = int(len(lst) / 2 - 1)
+        return (lst[num1] + lst[num2]) / 2 
 
 # lst = [12, 13, 134, 53, 43]
 # print(median(lst))
 # print(int(12/5) - 1)
 
 
-# def duck_duck_goose(lst: List[str]) -> List[str]:
-#     """Given an list of names (strings), play 'duck duck goose' with it, knocking out
-#     every third name (wrapping around) until only two names are left.
+def duck_duck_goose(lst: List[str]) -> List[str]:
+    """Given an list of names (strings), play 'duck duck goose' with it, knocking out
+    every third name (wrapping around) until only two names are left.
 
-#     In other words, when you hit the end of the list, wrap around and keep counting from
-#     where you were.
+    In other words, when you hit the end of the list, wrap around and keep counting from
+    where you were.
 
-#     For example, if given this list ['Nathan', 'Sasha', 'Sara', 'Jennie'], you'd first
-#     knock out Sara. Then first 'duck' on Jennie, wrap around to 'duck' on Nathan and
-#     'goose' on Sasha - knocking him out and leaving only Nathan and Jennie.
+    For example, if given this list ['Nathan', 'Sasha', 'Sara', 'Jennie'], you'd first
+    knock out Sara. Then first 'duck' on Jennie, wrap around to 'duck' on Nathan and
+    'goose' on Sasha - knocking him out and leaving only Nathan and Jennie.
 
-#     You may assume the list has 3+ names to start
+    You may assume the list has 3+ names to start
 
-#     Args:
-#         lst - a list of names (strings)
+    Args:
+        lst - a list of names (strings)
 
-#     Returns:
-#         the resulting list after playing duck duck goose
-#     """
-#     raise NotImplementedError("duck_duck_goose")
+    Returns:
+        the resulting list after playing duck duck goose
+    """
+    track = 0
+    
+    while len(lst) > 2:
+        for i in range(len(lst)):
+
+            if i >= len(lst):
+                i = 0
+
+            if track == 2:
+                lst.pop(i)
+                track = -1
+
+            track += 1
+
+            
+    return lst
+names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
+# l = ['Nathan', 'Sasha', 'Sara', 'Jennie']
+print(duck_duck_goose(names))
 
 
-# # this line causes the nested code to be skipped if the file is imported instead of run
-# if __name__ == "__main__":
-#     assert absolute(-1) == 1, "absolute of -1 failed"
-#     assert factorial(4) == 24, "factorial of 4 failed"
-#     assert every_other([1, 2, 3, 4, 5]) == [
-#         1,
-#         3,
-#         5,
-#     ], "every_other of [1,2,3,4,5] failed"
-#     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
-#     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
-#     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
 
-#     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
-#     assert duck_duck_goose(names) == ["roscoe", "law"]
 
-#     print("All tests passed!")
+# #this line causes the nested code to be skipped if the file is imported instead of run
+if __name__ == "__main__":
+    assert absolute(-1) == 1, "absolute of -1 failed"
+    assert factorial(4) == 24, "factorial of 4 failed"
+    assert every_other([1, 2, 3, 4, 5]) == [
+        1,
+        3,
+        5,
+    ], "every_other of [1,2,3,4,5] failed"
+    assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
+    assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
+    assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
+
+    names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
+    assert duck_duck_goose(names) == ["roscoe", "law"]
+
+    print("All tests passed!")

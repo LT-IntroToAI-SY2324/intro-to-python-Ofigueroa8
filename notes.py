@@ -32,8 +32,8 @@ print(lane_tech)
 # print(lane_tech[-1])
 # print(lane_tech[len(lane_tech)-1])
 
-# # Slices
-# print(lane_tech[1:3])
+# Slices
+print(lane_tech[1:3])
 # print(lane_tech[:3])
 # print(lane_tech[1:])
 # print(lane_tech[:])
