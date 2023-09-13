@@ -171,17 +171,19 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
         the resulting list after playing duck duck goose
     """
     track = 0
-    
+    i = 0
+
     while len(lst) > 2:
-        for i in range(len(lst)):
 
             if i >= len(lst):
                 i = 0
 
             if track == 2:
                 lst.pop(i)
+                i += -1
                 track = -1
 
+            i += 1
             track += 1
 
             
